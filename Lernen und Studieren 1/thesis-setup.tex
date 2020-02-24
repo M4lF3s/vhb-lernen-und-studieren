@@ -1,0 +1,77 @@
+% !TEX root = my-thesis.tex
+
+
+% **************************************************
+% Files' Character Encoding
+% **************************************************
+\PassOptionsToPackage{utf8}{inputenc}
+\usepackage{inputenc}
+
+
+% **************************************************
+% Information and Commands for Reuse
+% **************************************************
+\newcommand{\thesisTitle}{Lernen und Studieren (LuSt) - Teil 1}
+\newcommand{\thesisName}{Marcel Fraas}
+\newcommand{\thesisSubject}{Fragen zur Hausarbeit}
+\newcommand{\thesisDate}{24. Februar 2020}
+\newcommand{\thesisVersion}{Draft}
+
+\newcommand{\thesisFirstReviewer}{Eva Zeller}
+\newcommand{\thesisFirstReviewerUniversity}{\protect{Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)}}
+\newcommand{\thesisFirstReviewerDepartment}{Institut für Lern-Innovation}
+
+% \newcommand{\thesisSecondReviewer}{John Doe}
+% \newcommand{\thesisSecondReviewerUniversity}{\protect{Clean Thesis Style University}}
+% \newcommand{\thesisSecondReviewerDepartment}{Department of Clean Thesis Style}
+
+% \newcommand{\thesisFirstSupervisor}{Jane Doe}
+% \newcommand{\thesisSecondSupervisor}{John Smith}
+
+\newcommand{\thesisUniversity}{\protect{Universität Bayreuth}}
+\newcommand{\thesisUniversityDepartment}{}
+\newcommand{\thesisUniversityInstitute}{}
+\newcommand{\thesisUniversityGroup}{Virtuelle Hochschule Bayern}
+\newcommand{\thesisUniversityCity}{Bayreuth}
+\newcommand{\thesisUniversityStreetAddress}{Universitätsstr. 30}
+\newcommand{\thesisUniversityPostalCode}{95447}
+
+
+% **************************************************
+% Debug LaTeX Information
+% **************************************************
+%\listfiles
+
+
+% **************************************************
+% Load and Configure Packages
+% **************************************************
+\usepackage[english]{babel} % babel system, adjust the language of the content
+\PassOptionsToPackage{% setup clean thesis style
+    figuresep=colon,%
+    hangfigurecaption=false,%
+    hangsection=true,%
+    hangsubsection=true,%
+    sansserif=false,%
+    configurelistings=true,%
+    colorize=full,%
+    colortheme=unigreen,%
+    configurebiblatex=true,%
+    bibsys=biber,%
+    bibfile=bib-refs,%
+    bibstyle=alphabetic,%
+    bibsorting=nty,%
+}{cleanthesis}
+\usepackage{cleanthesis}
+
+\hypersetup{% setup the hyperref-package options
+    pdftitle={\thesisTitle},    %   - title (PDF meta)
+    pdfsubject={\thesisSubject},%   - subject (PDF meta)
+    pdfauthor={\thesisName},    %   - author (PDF meta)
+    plainpages=false,           %   -
+    colorlinks=false,           %   - colorize links?
+    pdfborder={0 0 0},          %   -
+    breaklinks=true,            %   - allow line break inside links
+    bookmarksnumbered=true,     %
+    bookmarksopen=true          %
+}
